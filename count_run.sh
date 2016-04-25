@@ -1,0 +1,1 @@
+hadoop jar ./share/hadoop/tools/lib/hadoop-streaming-2.6.0.jar -Dmapred.reduce.tasks=2 -input /project/scconnect/log2x.csv -output text/output_3 -mapper count_mapper.py -reducer count_reducer.py -file /usr/local/hadoop/project/count_reducer.py -file /usr/local/hadoop/project/count_mapper.py

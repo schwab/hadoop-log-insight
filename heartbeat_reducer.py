@@ -3,10 +3,10 @@
 import sys
 dtcount = {}
 def create_key(vals):
-	key = str(vals[0]) + ',' + str(vals[1]) + ',' + str(vals[2]) + ',' + str(vals[3])
+	key = str(vals[0]) + ',' + str(vals[1]) + ',' + str(vals[2]) + ',' + str(vals[3]) + ',' + str(vals[4])
 	return key	
 
-print "year,month,day,hour,messages"
+print "year,month,day,hour,connectorid,heartbeats"
 for line in sys.stdin:
     try:
         s = line.split(',')
